@@ -6,10 +6,10 @@
 <strong>
 Admin LTE for WireBootstrap
 </strong>
-</p>
+</p>  <br/>
 
-  <br/>
-<br/>
+  <br/>  <br/>
+
 
 <p>
 Create dashboard pages in WireBootstrap from one of the original Bootstrap theme templates.  This project includes multiple page layouts, KPIs, and other WireBootstrap widgets specific to Admin LTE. 
