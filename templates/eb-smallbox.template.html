@@ -1,0 +1,59 @@
+
+<form class="smart-form">
+
+    <fieldset>
+
+        <div class="row">
+
+            <section class="col col-4">
+                <label>Label:</label>
+                <label class="input"><input ng-model="options.name" /></label>
+		<span class="help-block">The name of the KPI</span>
+            </section>
+
+            <section class="col col-4">
+                <label>Value:</label>
+                <div eb-smartselect
+                     eb-data="fields()"
+                     eb-model="options.schema.value"
+                     data-class="checkbox state-default">
+                </div>
+                 <span class="help-block">The field that holds the value of the KPI</span>
+            </section>
+            
+            <section class="col col-4">
+                <label>Color:</label>
+                <div eb-smartselect
+                     eb-data="fields()"
+                     eb-model="options.schema.color">
+                </div>
+                <span class="help-block">The field that holds the CSS color style name</span>
+            </section>
+
+            
+        </div>
+
+    </fieldset>
+    
+    <fieldset>
+
+        <div class="row">
+
+            <section class="col col-4">
+                <label>Icon:</label>
+                <label class="input"><input ng-model="options.cssIcon" /></label>
+		<span class="help-block">The CSS class for the icon on the right</span>
+            </section>
+
+            <section class="col col-4">
+                <label>More Link:</label>
+                <label class="input"><input ng-model="options.moreLink" /></label>
+		<span class="help-block">The 'More info' URL link</span>
+            </section>           
+            
+        </div>
+
+    </fieldset>
+    
+</form>
+    

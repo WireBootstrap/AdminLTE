@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[[PageName]]</title>
+    
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/[[$ver.bootstrap]]/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/[[$ver.font-awesome]]/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">    
+    <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/_all-skins.min.css">
+    <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/AdminLTE.min.css">    
+[[#EnvProd-Begin]]
+    <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/eb-adminlte.min.css">
+[[#EnvProd-End]]
+[[#EnvDev-Begin]]
+    <link rel="stylesheet" href="[[$app.RunRoot]]/adminlte/css/eb-adminlte.css">
+[[#EnvDev-End]]
+[[#ModeEdit-Begin]]
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.css" rel="stylesheet">
+    <link href="/css/wire-page-edit[[$app.min]].css?v=[[$ver.app]]" rel="stylesheet">
+[[#ModeEdit-End]] 
+      
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+           
+      <link rel="shortcut icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+      
+  </head>
+  <body class="hold-transition skin-blue">
+      <div class="wrapper content-wrapper">
+
+          <section class="content-header">
+              <h1>
+                  [[PageName]]
+                  <p><small>[[PageDesc]]</small></p>
+              </h1>
+          </section>
+
+          <!-- 4 COLUMN WELL ROW -->
+          <section class="content">
+
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="box box-primary">
+                          <div class="box-header with-border">
+                              <div id="Z1" class="eb-page-zone" data-class="eb-page-widget col-md-3">
+                                  <!-- zone Z1 -->
+                                  <div class="eb-page-widget col-md-3" data-widget="[[WidgetId]]" data-name="[[WidgetName]]">
+                                      <div class="box-tools pull-right">
+                                          [[#ModeEdit-Begin]]
+                                          <button type="button" class="btn btn-box-tool edit" data-toggle="tooltip" title="Edit this widget"><i class="fa fa-pencil-square-o"></i></button>
+                                          <button type="button" class="btn btn-box-tool delete" data-toggle="tooltip" title="Remove this widget"><i class="fa fa-times"></i></button>
+                                          [[#ModeEdit-End]]
+                                      </div>
+                                      <div class="box-body">
+                                          <div class="col-md-12">
+                                              <label>[[WidgetName]]</label>
+                                              [[Element]]
+                                          </div>
+                                      </div>
+                                      [[ScriptTag]]
+                                  </div>
+                                  <!-- /zone -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              [[#ModeEdit-Begin]]
+              <div class="row addwidget">
+                  <a href="javascript:void(0);" data-zone="#Z1" class="btn btn-outline btn-default btn-xs btn-addwidget">
+                      <i class="fa fa-plus" aria-hidden="true"></i> Add Widget
+                  </a>
+              </div>
+              [[#ModeEdit-End]]
+
+          </section>
+
+
+          <!-- 3 COLUMN BOX ROW -->
+          <section class="content">
+
+              <div class="row">
+
+                  <div id="Z2" class="eb-page-zone" data-class="eb-page-widget col-md-4">
+                      <!-- zone Z2 -->
+                      <div class="eb-page-widget col-md-4" data-widget="[[WidgetId]]" data-name="[[WidgetName]]">
+
+                          <div class="box box-primary">
+                              <div class="box-header with-border">
+                                  <h3 class="box-title">[[WidgetName]]</h3>
+                                  <div class="box-tools pull-right">
+                                      [[#ModeEdit-Begin]]
+                                      <button type="button" class="btn btn-box-tool edit" data-toggle="tooltip" title="Edit this widget"><i class="fa fa-pencil-square-o"></i></button>
+                                      <button type="button" class="btn btn-box-tool delete" data-toggle="tooltip" title="Remove this widget"><i class="fa fa-times"></i></button>
+                                      [[#ModeEdit-End]]
+                                      [[#ModeRun-Begin]]
+                                      <span class="eb-csv-export" data-data="[[DataSetId]]" data-name="[[WidgetName]]">
+                                          <span class='badge bg-light-blue' style="cursor:pointer" data-toggle='tooltip' title='Export data to CSV'><i class='fa fa-file-excel-o'></i></span>
+                                      </span>
+                                      <span class="eb-filter-label" data-data="[[DataSetId]]"
+                                            data-template="<span class='badge bg-light-blue' data-toggle='tooltip' data-html='true'><i class='fa fa-filter'></i></span>">
+                                      </span>
+                                      <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                      [[#ModeRun-End]]
+                                  </div>
+                              </div>
+
+                              <div class="box-body">
+                                  <div class="col-md-12">
+                                      [[Element]]
+                                  </div>
+                              </div>
+
+                          </div>
+                          <!-- /end box -->
+                          [[ScriptTag]]
+                      </div>
+                      <!-- /zone -->
+                  </div>
+
+              </div>
+
+              [[#ModeEdit-Begin]]
+              <div class="row addwidget">
+                  <a href="javascript:void(0);" data-zone="#Z2" class="btn btn-outline btn-default btn-xs btn-addwidget">
+                      <i class="fa fa-plus" aria-hidden="true"></i> Add Widget
+                  </a>
+              </div>
+              [[#ModeEdit-End]]
+
+          </section>
+
+          <footer class="main-footer">
+              <img src="[[$app.RunRoot]]/img/eb/logo/logo_transparent_background.png" alt="WireBootstrap" style="height:26px">
+          </footer>
+
+      </div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/[[$ver.jquery]]/jquery.min.js?v=[[$ver.jquery]]"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/[[$ver.bootstrap]]/js/bootstrap.min.js?v=[[$ver.bootstrap]]"></script>
+      <script src="[[$app.RunRoot]]/templates/Admin LTE/js/app.js"></script>
+
+      [[#EnvProd-Begin]]
+      <script src="[[$app.CodeRoot]]/eb/[[$ver.eb]]/eb-all.min.js?v=[[$ver.eb]]"></script>
+      <script src="[[$app.RunRoot]]/templates/Admin LTE/js/eb-adminlte.min.js"></script>
+      [[#EnvProd-End]]
+
+      [[#EnvDev-Begin]]
+      <script src="//localhost:65003/eb/dev/eb.js"></script>
+      <script src="//localhost:65003/eb/dev/eb-ui.js"></script>
+      <script src="//localhost:65003/bootstrap/dev/eb-bootstrap.js"></script>
+      <script src="[[$app.RunRoot]]/adminlte/classes/eb-adminlte-template.js"></script>
+      [[#EnvDev-End]]
+
+      [[#ModeEdit-Begin]]
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.js"></script>
+      <script type="text/javascript" src="/app/wire-edit-page[[$app.min]].js?v=[[$ver.app]]"></script>
+      [[#ModeEdit-End]]
+
+
+  </body>
+</html>
