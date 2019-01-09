@@ -12,8 +12,8 @@ Vendor: <a href="https://adminlte.io" target="_blank">Almsaeed Studio.</a><br/>
 Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><br/>
 Demo: <a href="https://adminlte.io/themes/AdminLTE">Admin LTE Template</a><br>
   </p>
-  <hr/>
-<hr/>
+  <br/>
+<br/>
 
 <p>
 Create dashboard pages in WireBootstrap from one of the original Bootstrap theme templates.  This project includes multiple page layouts, KPIs, and other WireBootstrap widgets specific to Admin LTE. 
