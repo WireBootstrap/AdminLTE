@@ -12,7 +12,7 @@ Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><b
 Demo: <a href="https://adminlte.io/themes/AdminLTE/index.html">Admin LTE Template</a><br>
   </p>
 </p>  
-
+<br/>
 <p>
 Create dashboard pages in WireBootstrap from one of the original Bootstrap theme templates.  This project includes multiple page layouts, KPIs, and other WireBootstrap widgets specific to Admin LTE. 
 </p>
