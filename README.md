@@ -9,7 +9,7 @@ Admin LTE for WireBootstrap
  <p>
 Vendor: <a href="https://adminlte.io" target="_blank">Almsaeed Studio</a><br/>
 Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><br/>
-Demo: <a href="https://adminlte.io/themes/AdminLTE/index.html">Admin LTE Template</a><br>
+Demo: <a href="https://adminlte.io/themes/AdminLTE/index2.html">Admin LTE Template</a><br>
   </p>
 </p>  
 <br/>
@@ -19,9 +19,8 @@ Create dashboard pages in WireBootstrap from one of the original Bootstrap theme
 
 <hr/>
 
-
 <table>
   <tr><td><img src="https://github.com/WireBootstrap/AdminLTE/blob/master/images/eb-smallbox.png" width="50" height="50"></td>
-    <td><a href="https://github.com/WireBootstrap/Bootstrap/wiki/Bootstrap-Table">KPI 1</a></td>
+    <td><a href="https://github.com/WireBootstrap/AdminLTE/wiki/KPI1">KPI 1</a></td>
   </tr>
 </table>
