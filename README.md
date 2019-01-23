@@ -7,7 +7,7 @@ Admin LTE for WireBootstrap
 </strong>
  <p>
 Vendor: <a href="https://adminlte.io" target="_blank">Almsaeed Studio</a><br/>
-Support: <a href="http://www.www.com" target="_blank">WireBootstrap Forums</a><br/>
+Support: <a href="https://help.wirebootstrap.com/support/discussions/forums/22000200289" target="_blank">WireBootstrap Forums</a><br/>
 Demo: <a href="https://adminlte.io/themes/AdminLTE/index2.html">Admin LTE Template</a><br>
   </p>
 <br/>
