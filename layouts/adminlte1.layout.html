@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/_all-skins.min.css">
     <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/AdminLTE.min.css">    
 [[#EnvProd-Begin]]
-    <link rel="stylesheet" href="[[$app.RunRoot]]/templates/Admin LTE/css/eb-adminlte.min.css">
+    <link rel="stylesheet" href="[[$app.CodeRoot]]/adminlte/[[$ver.adminlte]]/eb-adminlte.min.css?v=[[$ver.adminlte]]">
 [[#EnvProd-End]]
 [[#EnvDev-Begin]]
-    <link rel="stylesheet" href="[[$app.RunRoot]]/adminlte/css/eb-adminlte.css">
+    <link rel="stylesheet" href="[[$app.CodeRoot]]/admin lte/css/eb-adminlte.css">
 [[#EnvDev-End]]
 [[#ModeEdit-Begin]]
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.1/dragula.min.css" rel="stylesheet">
@@ -30,8 +30,8 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
            
-      <link rel="shortcut icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="[[$app.RunRoot]]/img/logo/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="[[$app.RunRoot]]/img/eb/logo/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="[[$app.RunRoot]]/img/eb/logo/favicon.ico" type="image/x-icon">
       
   </head>
   <body class="hold-transition skin-blue">
@@ -152,14 +152,14 @@
 
       [[#EnvProd-Begin]]
       <script src="[[$app.CodeRoot]]/eb/[[$ver.eb]]/eb-all.min.js?v=[[$ver.eb]]"></script>
-      <script src="[[$app.RunRoot]]/templates/Admin LTE/js/eb-adminlte.min.js"></script>
+      <script src="[[$app.CodeRoot]]/adminlte/[[$ver.adminlte]]/eb-adminlte.min.js?v=[[$ver.adminlte]]"></script>
       [[#EnvProd-End]]
 
       [[#EnvDev-Begin]]
-      <script src="//localhost:65003/eb/dev/eb.js"></script>
-      <script src="//localhost:65003/eb/dev/eb-ui.js"></script>
-      <script src="//localhost:65003/bootstrap/dev/eb-bootstrap.js"></script>
-      <script src="[[$app.RunRoot]]/adminlte/classes/eb-adminlte-template.js"></script>
+      <script src="[[$app.CodeRoot]]/eb/classes/eb.js"></script>
+      <script src="[[$app.CodeRoot]]/eb/classes/eb-ui.js"></script>
+      <script src="[[$app.CodeRoot]]/bootstrap/build/lib/eb-bootstrap.js"></script>
+      <script src="[[$app.CodeRoot]]/admin lte/classes/eb-adminlte-template.js"></script>
       [[#EnvDev-End]]
 
       [[#ModeEdit-Begin]]
